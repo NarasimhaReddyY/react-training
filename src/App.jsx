@@ -1,11 +1,17 @@
 import React, {Component} from 'react';
+import Textbox from './Textbox.jsx';
+import Selectbox from './Selectbox.jsx'
 	
 class App extends Component {
   render() {
     return (
-      <h1>Hello React :)</h1>
+      <div> 
+      	<Textbox />
+      	<Selectbox />	
+  	  </div>
     );
   }
 }
 
 export default App;
+	
