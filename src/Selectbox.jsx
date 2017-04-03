@@ -34,7 +34,7 @@ class Selectbox extends Component {
  	        <option value="Chaina">Chaina</option>
  	      </select>
 
-	      <h4> you have selected: {this.state.value} </h4>
+	      <p> you have selected: {this.state.value} </p>
 	    </div>
 	  )
 	}
