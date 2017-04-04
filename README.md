@@ -9,3 +9,5 @@
 #### 4. Counter App
 #### 5. Unordered List
 #### 6. Radio Buttons
+#### 7. Auto sync  between components
+	    * Radio vs Selectbox 

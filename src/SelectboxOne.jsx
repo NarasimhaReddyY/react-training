@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 
+//this component is reused in exaple 7A
 class SelectboxOne extends Component {
   constructor (props) {
   	super(props);

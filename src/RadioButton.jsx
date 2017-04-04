@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 
+//this component is reused in example 7A to 7D
 class RadioButton extends Component {
 
 	constructor (props) {
@@ -13,7 +14,7 @@ class RadioButton extends Component {
 
 	render() {
 		return (
-			<input type="radio" name={this.props.name} id={this.props.id} number={this.props.number} onChange={this.onSelect}/>
+			<input type="radio" value={this.props.value} name={this.props.name} id={this.props.id} number={this.props.number} onChange={this.onSelect}/>
 		)
 	}
 }
