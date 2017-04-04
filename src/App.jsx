@@ -13,6 +13,7 @@ class App extends Component {
           <li><Link to="/counter-app">Counter App</Link></li>
           <li><Link to="/unordered-list">Unorder List</Link></li>
           <li><Link to="/repo/narasimha/react-training">Current Repo</Link></li>
+          <li><Link to="/radio-buttons">Radio Buttons</Link></li>
           {this.props.children}
         </ul>
       </div>

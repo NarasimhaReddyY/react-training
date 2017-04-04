@@ -14,6 +14,7 @@ import Form from './Form.jsx';
 import Counter from './Counter.jsx';
 import UnorderList from './UnorderList.jsx';
 import Repo from './Repo.jsx';
+import RadioButtons from './RadioButtons.jsx';
 
 ReactDOM.render((<Router history={hashHistory}>
 				    <Route path="/" component={App}/>
@@ -23,5 +24,6 @@ ReactDOM.render((<Router history={hashHistory}>
 				    <Route path="/counter-app" component={Counter}/>
 				    <Route path="/unordered-list" component={UnorderList}/>
 				    <Route path="/repo/:userName/:repoName" component={Repo}/>
+				    <Route path="/radio-buttons" component={RadioButtons}/>
 				  </Router>
 				), document.getElementById('react-root'));
