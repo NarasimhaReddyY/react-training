@@ -16,6 +16,7 @@ import UnorderList from './UnorderList.jsx';
 import Repo from './Repo.jsx';
 import RadioButtons from './RadioButtons.jsx';
 import ParentRadioButton from './ParentRadioButton.jsx';
+import RadioVsTextBox from "./RadioVsTextBox.jsx";
 
 ReactDOM.render((<Router history={hashHistory}>
 				    <Route path="/" component={App}/>
@@ -27,5 +28,6 @@ ReactDOM.render((<Router history={hashHistory}>
 				    <Route path="/repo/:userName/:repoName" component={Repo}/>
 				    <Route path="/radio-buttons" component={RadioButtons}/>
 				    <Route path="/radio-select" component={ParentRadioButton}/>
+				    <Route path="/radio-text" component={RadioVsTextBox}/>
 				  </Router>
 				), document.getElementById('react-root'));

@@ -11,3 +11,4 @@
 #### 6. Radio Buttons
 #### 7. Auto sync  between components
 	    * Radio vs Selectbox 
+	    * Radio vs Textbox

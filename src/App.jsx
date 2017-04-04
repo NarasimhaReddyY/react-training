@@ -16,9 +16,8 @@ class App extends Component {
           <li><Link to="/radio-buttons">Radio Buttons</Link></li>
           <li>Auto sync between components           
               <ul>
-                <li>
-                  <Link to="/radio-select">Radio vs Select Box</Link>
-                </li>
+                <li><Link to="/radio-select">Radio vs Select Box</Link></li>
+                <li><Link to="/radio-text">Radio vs Text Box</Link></li>
               </ul>
           </li>
           {this.props.children}

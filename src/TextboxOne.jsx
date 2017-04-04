@@ -8,7 +8,7 @@ class TextboxOne extends Component {
 	render () {
 	  return (	
 	  	<div>
-	  		<input type="text" value={this.props.value}/>
+	  		<input type="text" value={this.props.value} onInput={this.props.handleInput}/>
   		</div>
 	  )	
 	}
