@@ -1,23 +1,20 @@
 import React, {Component} from 'react';
-import Textbox from './Textbox.jsx';
-import Selectbox from './Selectbox.jsx'
-import Form from './Form.jsx'
-import Counter from './Counter.jsx'
-import UnorderList from './UnorderList.jsx'
-	
+import { Link } from 'react-router';
+
 class App extends Component {
   render() {
     return (
       <div>
-      	<Textbox />
-        <br/>
-      	<Selectbox />	
-        <br/>
-        <Form />
-        <br/>
-        <Counter />
-        <br/>
-        <UnorderList />
+      	<h3>Welcome to React App</h3>
+        <ul>
+          <li><Link to="/textbox">Textbox</Link></li>
+          <li><Link to="/selectbox">Selectbox</Link></li>
+          <li><Link to="/selected-text">Display Text</Link></li>
+          <li><Link to="/counter-app">Counter App</Link></li>
+          <li><Link to="/unordered-list">Unorder List</Link></li>
+          <li><Link to="/repo/narasimha/react-training">Current Repo</Link></li>
+          {this.props.children}
+        </ul>
       </div>
     );
   }
