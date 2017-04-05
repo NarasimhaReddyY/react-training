@@ -14,7 +14,6 @@ class Element extends Component {
 	}
 
 	render() {
-		//Used ternary operater here.
 		return (
 			<div>
 				{ this.props.value ? 

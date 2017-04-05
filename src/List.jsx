@@ -13,15 +13,36 @@ class List extends Component {
 		this.buttonEvent = this.buttonEvent.bind(this);
 	}
 
-	handleEvent(value) {
+	handleEvent(newValue) {
 		var elements = this.state.list;
-		elements.push(value);
+		var currentValue = this.state.value;
+		elements.push(newValue);
+
+		this.setState({value: ""});
+
+
+		//TODO: write a magical code here to replace existing string instead of adding a new one while updating.
+
+		// if (elements.length > 0) {
+		// 	for(var i=0; i < elements.length; i++) {
+		// 		if (elements[i].startsWith(newValue)) {
+		// 			elements[i] = newValue;
+		// 			console.log(elements);
+		// 			break;
+		// 		} else if () {
+
+		// 		}
+		// 	}
+		// } else {
+		// 	elements.push(newValue);
+
+		// }
+
 		this.setState({list: elements});
 	}
 
 	buttonEvent(event) {
 		if (event.target.name === "Edit") {
-			console.log(event.target);
 			this.setState({value: event.target.value});		
 		} else if (event.target.name === "Delete") {
 			var elements = this.state.list;
