@@ -13,6 +13,7 @@ class ElementList extends Component {
 		return (
 			<div>	
 		  		<h3>Unorder List</h3>
+		  		<p>Note: While editing you can add continuation to existing element but can't replace.</p>
 		    	<ul>{renderElements}</ul>
 		  	</div>
 		)
