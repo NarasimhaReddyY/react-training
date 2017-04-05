@@ -20,6 +20,7 @@ class App extends Component {
                 <li><Link to="/radio-text">Radio vs Text Box</Link></li>
               </ul>
           </li>
+          <li><Link to="/list-textbox">List with Textbox</Link></li>
           {this.props.children}
         </ol>
       </div>

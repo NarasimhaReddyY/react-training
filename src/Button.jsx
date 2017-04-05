@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-class Button extends Component {
+class 	Button extends Component {
 
 	constructor(props) {
 		super(props);
@@ -8,7 +8,7 @@ class Button extends Component {
 
 	render() {
 	  return (
-	  	<button type="button" onClick={this.props.onClickEvent}>{this.props.name}</button>
+	  	<button type="button" name={this.props.name} value={this.props.value} onClick={this.props.onClickEvent}>{this.props.name}</button>
   	  )
 	}
 }
